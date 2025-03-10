@@ -104,6 +104,7 @@ header .navbar{
     background: var(--secondary-color);
 }
 
+/* Hero section */
 .hero-section{
     min-height: 100vh;
     background-color: var(--primary-color);
@@ -167,4 +168,36 @@ header .navbar{
 .hero-section .hero-image-wrapper{
     max-width: 700px;
     margin-right: 10px;
+}
+
+/* Responsive media */
+@media screen and (max-width: 900px) {
+
+    :root{
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    .navbar .nav-menu{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:100px;
+        background: var(--white-color);
+    }
+
+    .navbar .nav-menu .nav-link{
+        color: var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
 }
