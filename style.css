@@ -9,10 +9,10 @@
 :root{
     /* colours */
     --white-color: #fff;
-    --dark-color: #252525;
-    --primary-color: #3b121c;
-    --secondary-color: #f3961c;
-    --light-pink-color: #faf4f5;
+    --dark-color: #292929;
+    --primary-color: #0D0D0D;
+    --secondary-color: #BF712C;
+    --light-pink-color: #D9D9D9;
     --medium-gray-color: #ccc;
 
     /* font size */
@@ -101,11 +101,13 @@ header .navbar{
     color: var(--white-color);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
+    translate: -45%;
 }
 
 .navbar .nav-menu{
     display: flex;
     gap: 10px;
+    translate: -25%;
 }
 
 .navbar .nav-menu .nav-link{
@@ -247,7 +249,6 @@ header .navbar{
 .gallery-section{
     color: var(--white-color);
     background: var(--dark-color);
-
     padding: 50px 0 100px;
 }
 
@@ -265,19 +266,20 @@ header .navbar{
     text-align: center;
     flex-direction:column;
     justify-content: space-between;
-    width: calc(100% / 3 - 110px)
+    width: calc(100% / 3 - 80px)
 }
 
 .gallery-section .gallery-list .gallery-item .gallery-image{
-    max-width: 83%;
-    aspect-ratio:1;
-    margin-bottom: 15px;
+    max-width: 100%;
+    margin-bottom: 1px;
     object-fit: contain;
 }
 
 .gallery-section .gallery-list .gallery-item .name{
+    color:var(--secondary-color);
     margin: 12px o;
-    font-size: var(--font-size-l);
+    margin-top: 30PX;
+    font-size: var(--font-size-m);
     font-weight: var(--font-weight-semibold);
 }
 
@@ -298,6 +300,9 @@ header .navbar{
     background-color: var(--secondary-color);
     font-weight: var(--font-weight-medium);
     transition: 0.3s ease;
+    position: absolute;
+    inset-inline-start: 50%;
+    translate: -50% -50%;
 }
 
 .gallery-section .gallery-list .button:hover,
