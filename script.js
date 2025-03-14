@@ -5,4 +5,10 @@ menuOpenButton.addEventListener("click", () => {
     document.body.classList.toggle("show-mobile-menu");
 });
 
-menuCloseButton .addEventListener("click", () => menuOpenButton. click () );
+// Close menu when the close button is clicked
+menuCloseButton.addEventListener("click" , () => menuOpenButton.click());
+
+// Close menu when the nav link is clicked
+navLinks.forEach(link => {
+    link.addEventListener("click", () => menuOpenButton.click());
+});
