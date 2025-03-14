@@ -67,7 +67,7 @@ img{
 
 .section-title{
     text-align: center;
-    padding: 60px 0 100px;
+    padding: 30px 0 50px;
     text-transform: uppercase;
     font-size: var(--font-size-xl);
 }
@@ -195,7 +195,7 @@ header .navbar{
 
 /* About section styling */
 .about-section{
-    padding: 120px 0;
+    padding: 50px 0 80px;
     background: var(--light-pink-color);
 }
 
@@ -249,13 +249,13 @@ header .navbar{
 .gallery-section{
     color: var(--white-color);
     background: var(--dark-color);
-    padding: 50px 0 100px;
+    padding: 50px 0 80px;
 }
 
 .gallery-section .gallery-list{
     display: flex;
     flex-wrap:wrap;
-    gap: 110px;
+    gap: 100px;
     align-items:center;
     justify-content: space-between;
 }
@@ -270,7 +270,7 @@ header .navbar{
 }
 
 .gallery-section .gallery-list .gallery-item .gallery-image{
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 1px;
     object-fit: contain;
 }
@@ -278,7 +278,7 @@ header .navbar{
 .gallery-section .gallery-list .gallery-item .name{
     color:var(--secondary-color);
     margin: 12px o;
-    margin-top: 30PX;
+    margin-top: 25PX;
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-semibold);
 }
@@ -302,7 +302,7 @@ header .navbar{
     transition: 0.3s ease;
     position: absolute;
     inset-inline-start: 50%;
-    translate: -50% -50%;
+    translate: -50% -80%;
 }
 
 .gallery-section .gallery-list .button:hover,
@@ -393,6 +393,11 @@ header .navbar{
 
     .gallery-section .gallery-list .gallery-item{
         width: calc(100% / 3 - 60px);
+    }
+
+    .gallery-section .gallery-list .buttons{
+        position: absolute;
+        inset-inline-start: 50%;
     }
 }
 
