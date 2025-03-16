@@ -105,7 +105,7 @@ header .navbar{
     color: var(--white-color);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
-    translate: -45%;
+    translate: -55%;
 }
 
 .navbar .nav-menu{
