@@ -6,9 +6,10 @@
     <title>Naomi Farrugia Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="gallerystyle.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Header / Navbar / -->
+    <!-- Header / Navbar -->
     <header>
         <nav class="navbar">
             <a href="index.html" class="nav-logo section-content">
@@ -39,118 +40,27 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Gallery section */ -->
-        <div class="gallery-section">
-            <h2 class="section-title">My work</h2>
-            <div class="filter_buttons">
-                <button data-name="all">Show All</button>
-                <button data-name="logos">Logos</button>
-                <button data-name="posters">Posters</button>
-                <button data-name="drawings">Digital Drawings</button>
+    <!-- Gallery -->
+     <section id="projects">
+        <div class="container">
+            <div class="items-links">
+                <span class="item-link menu-active" data-name="all">All</span>
+                <span class="item-link" data-name="logos">Logos</span>
+                <span class="item-link" data-name="posters">Posters</span>
+                <span class="item-link" data-name="drawings">Digital Drawings</span>
             </div>
 
-            <div class="filter_design">
-                <div class="design" data-name="logos">
-                    <img src="images/logo-gallery-image-1.0.jpg" alt="Hayden Grech Photography logo">
-                </div>
-
-                <div class="design" data-name="logos">
-                    <img src="images/logo-gallery-image-2.0.jpg" alt="Big Boy Burger logo">
-                </div>
-
-                <div class="design" data-name="logos">
-                    <img src="images/logo-gallery-image-3.0.jpg" alt="Titan's POP! Vinyl Collection logo">
-                </div>
-
-                <div class="design" data-name="logos">
-                    <img src="images/logo-gallery-image-4.1.jpg" alt="Ethereal Beauty logo">
-                </div>
-            </div>
-
-            <div class="filter_design">
-                <div class="design" data-name="posters">
-                    <img src="images/poster-gallery-image-1.1.png" alt="Halloween Party poster">
-                </div>
-
-                <div class="design" data-name="posters">
-                    <img src="images/poster-gallery-image-2.1.png" alt="Recipe Card poster">
-                </div>
-
-                <div class="design" data-name="posters">
-                    <img src="images/poster-gallery-image-3.1.png" alt="Festival poster">
-                </div>
-
-                <div class="design" data-name="posters">
-                    <img src="images/poster-gallery-image-4.1.png" alt="The Visual Power of Design Grids">
-                </div>
-            </div>
-
-            <div class="filter_design">
-                <div class="design" data-name="drawings">
-                    <img src="images/drawing-gallery-image-1.jpg" alt="Open mouth skull drawing">
-                </div>
-
-                <div class="design" data-name="drawings">
-                    <img src="images/drawing-gallery-image-2.jpg" alt="Skull, flower and hourglass drawing">
-                </div>
-
-                <div class="design" data-name="drawings">
-                    <img src="images/drawing-gallery-image-3.jpg" alt="Duck drawing">
-                </div>
-
-                <div class="design" data-name="drawings">
-                    <img src="images/drawing-gallery-image-4.jpg" alt="Skull in a potion bottle drawing">
-                </div>
-
-                <div class="design" data-name="drawings">
-                    <img src="images/drawing-gallery-image-5.jpg" alt="Ghost drawing">
-                </div>
-
-                <div class="design" data-name="drawings">
-                    <img src="images/drawing-gallery-image-6.jpg" alt="Cats and skull drawing">
-                </div>
-
-                <div class="design" data-name="drawings">
-                    <img src="images/drawing-gallery-image-7.jpg" alt="poison-apple drawing">
-                </div>
-
-                <div class="design" data-name="drawings">
-                    <img src="images/drawing-gallery-image-8.jpg" alt="Skull-and-Candles drawing">
-                </div>
-
+            <div class="gallery">
+                <div class="project-img" data-name="logos"><img src="images/logo-gallery-image-1.1.png" alt="Hayden Grech Photography logo"></div>
+                <div class="project-img" data-name="logos"><img src="images/logo-gallery-image-2.1.png" alt="Big Boy Burger logo"></div>
+                <div class="project-img" data-name="logos"><img src="images/logo-gallery-image-3.1.png" alt="Titan's POP! Vinyl Collection logo"></div>
+                <div class="project-img" data-name="logos"><img src="images/logo-gallery-image-4.1.jpg" alt="Ethereal Beauty logo"></div>
+                <div class="project-img" data-name="posters"><img src="images/poster-gallery-image-1.1.png" alt="Halloween Party poster"></div>
+                <div class="project-img" data-name="posters"><img src="images/poster-gallery-image-2.1.png" alt="Recipe Card poster"></div>
+                <div class="project-img" data-name="posters"><img src="images/poster-gallery-image-3.1.png" alt="Festival poster"></div>
+                <div class="project-img" data-name="posters"><img src="images/poster-gallery-image-4.1.png" alt="The Visual Power of Design Grids poster"></div>
             </div>
         </div>
-
-             <!-- Footer section */ -->
-             <footer class="footer-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-col">
-                            <h4>Company</h4>
-                            <ul>
-                                <a href="#">About</a>
-                                <a href="#">Privacy Policy</a>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4>Help</h4>
-                            <ul>
-                                <a href="#">FAQ</a>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4>Follow</h4>
-                            <div class="social-link">
-                                <a href="https://www.instagram.com/naomi_portfolio.03/"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/naomif2003/"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             </footer>
-    </main>
-
-    <script src="script.js"></script>
+     </section>
 </body>
 </html>
