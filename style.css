@@ -411,7 +411,7 @@ header .navbar{
 .footer-col h4{
     color: var(--white-color);
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     position: relative;
     text-transform: uppercase;
 }
@@ -452,7 +452,7 @@ header .navbar{
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 15px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-circle);
     color: var(--white-color);
 }
 
@@ -600,7 +600,7 @@ header .navbar{
         width: 100%;
     }
 
-    .footer-section .section-content{
+    .footer-section .container{
         flex-direction: column;
         gap: 20px;
     }

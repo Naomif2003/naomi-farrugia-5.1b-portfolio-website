@@ -38,60 +38,89 @@
             <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
-                   
-    <section class="gallery">
-        <h1 class="section-title">Some of my work</h1>
-        <main class="maincontainer">
-             <!-- Button sections */ -->
-            <div class="button-group">
-                <button class="button active" data-filter="#">All</button>
-                <button class="button active" data-filter="#" logos>Logos</button>
-                <button class="button active" data-filter="#" posters>Posters</button>
-                <button class="button active" data-filter="#" drawings>Digital Drawings</button>
-             </div>
 
-             <!-- Gallery section - logos */ -->
-             <div class="gallery img">
-                <div class="item logos">
-                    <img src="images/logo-gallery-image-1.1.png" alt="Hayden Grech Photography">
-                    <div class="overlay">
-                        <a href="#">View more</a>
-                    </div>
-    
-                    <img src="images/logo-gallery-image-2.1.png" alt="Big Boy Burger logo">
-                    <div class="overlay">
-                        <a href="#">View more</a>
-                    </div>
-    
-                    <img src="images/logo-gallery-image-3.1.png" alt="Titan's POP! Vinyl Collection logo">
-                    <div class="overlay">
-                        <a href="#">View more</a>
-                    </div>
+    <main>
+        <!-- Gallery section */ -->
+        <div class="gallery-section">
+            <h2 class="section-title">My work</h2>
+            <div class="filter_buttons">
+                <button data-name="all">Show All</button>
+                <button data-name="logos">Logos</button>
+                <button data-name="posters">Posters</button>
+                <button data-name="drawings">Digital Drawings</button>
+            </div>
+
+            <div class="filter_design">
+                <div class="design" data-name="logos">
+                    <img src="images/logo-gallery-image-1.0.jpg" alt="Hayden Grech Photography logo">
                 </div>
-             <!-- Gallery section - posters */ -->
-             <div class="item posters">
-                <img src="images/poster-gallery-image-1.1.png" alt="Halloween Party poster">
-                <div class="overlay">
-                    <a href="#">View more</a>
+
+                <div class="design" data-name="logos">
+                    <img src="images/logo-gallery-image-2.0.jpg" alt="Big Boy Burger logo">
                 </div>
-                <img src="images/poster-gallery-image-2.1.png" alt="Recipe Card poster">
-                <div class="overlay">
-                    <a href="#">View more</a>
+
+                <div class="design" data-name="logos">
+                    <img src="images/logo-gallery-image-3.0.jpg" alt="Titan's POP! Vinyl Collection logo">
                 </div>
-                <img src="images/poster-gallery-image-3.1.png" alt="Festival poster">
-                <div class="overlay">
-                    <a href="#">View more</a>
+
+                <div class="design" data-name="logos">
+                    <img src="images/logo-gallery-image-4.1.jpg" alt="Ethereal Beauty logo">
                 </div>
             </div>
-             <!-- Gallery section - drawings */ -->
-             <div class="item drawings">
-                <img src="images/skull-image.png" alt="Skull drawing">
-                <div class="overlay">
-                    <a href="#">View more</a>
+
+            <div class="filter_design">
+                <div class="design" data-name="posters">
+                    <img src="images/poster-gallery-image-1.1.png" alt="Halloween Party poster">
+                </div>
+
+                <div class="design" data-name="posters">
+                    <img src="images/poster-gallery-image-2.1.png" alt="Recipe Card poster">
+                </div>
+
+                <div class="design" data-name="posters">
+                    <img src="images/poster-gallery-image-3.1.png" alt="Festival poster">
+                </div>
+
+                <div class="design" data-name="posters">
+                    <img src="images/poster-gallery-image-4.1.png" alt="The Visual Power of Design Grids">
                 </div>
             </div>
-         </div>
-        </main>
+
+            <div class="filter_design">
+                <div class="design" data-name="drawings">
+                    <img src="images/drawing-gallery-image-1.jpg" alt="Open mouth skull drawing">
+                </div>
+
+                <div class="design" data-name="drawings">
+                    <img src="images/drawing-gallery-image-2.jpg" alt="Skull, flower and hourglass drawing">
+                </div>
+
+                <div class="design" data-name="drawings">
+                    <img src="images/drawing-gallery-image-3.jpg" alt="Duck drawing">
+                </div>
+
+                <div class="design" data-name="drawings">
+                    <img src="images/drawing-gallery-image-4.jpg" alt="Skull in a potion bottle drawing">
+                </div>
+
+                <div class="design" data-name="drawings">
+                    <img src="images/drawing-gallery-image-5.jpg" alt="Ghost drawing">
+                </div>
+
+                <div class="design" data-name="drawings">
+                    <img src="images/drawing-gallery-image-6.jpg" alt="Cats and skull drawing">
+                </div>
+
+                <div class="design" data-name="drawings">
+                    <img src="images/drawing-gallery-image-7.jpg" alt="poison-apple drawing">
+                </div>
+
+                <div class="design" data-name="drawings">
+                    <img src="images/drawing-gallery-image-8.jpg" alt="Skull-and-Candles drawing">
+                </div>
+
+            </div>
+        </div>
 
              <!-- Footer section */ -->
              <footer class="footer-section">
@@ -121,7 +150,6 @@
                 </div>
              </footer>
     </main>
-    </section>
 
     <script src="script.js"></script>
 </body>

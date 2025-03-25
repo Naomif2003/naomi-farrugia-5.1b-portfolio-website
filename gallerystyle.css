@@ -71,7 +71,7 @@ img{
 
 .section-title{
     text-align: center;
-    padding: 30px 0 50px;
+    padding: 0 0 50px;
     text-transform: uppercase;
     font-size: var(--font-size-xl);
 }
@@ -88,7 +88,7 @@ img{
 
 /* Navbar styling */
 header{
-    position: fixed;
+    /* DELETED position: fixed; */
     width: 100%;
     z-index: 5;
     background: var(--primary-color);
@@ -133,44 +133,67 @@ header .navbar{
 
 /* Gallery styling */
 
-.gallery{
-    min-height: 100vh;
-    background-color: var(--dark-color);
-}
-.gallery h1{
-    width: 100%;
-    padding: 150px 8%;
-    color: var(--white-color);
+.gallery-section{
     position: relative;
+    max-width: 1350px;
+    width: 100%;
+    padding: 20px;
+    margin: 50px 20px;
 }
 
-.button-group{
-    text-align: center;
-    margin-bottom: 40px;
+.filter_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 32%;
 }
 
-.button-group .button{
-    display: inline-block;
+button{
     padding: 10px 20px;
-    margin: 5px;
-    background-color:var(--dark-color);
-    color: var(--white-color);
     font-size: var(--font-size-m);
-    letter-spacing: 1px;
-    transition: all 0.4s;
-    cursor: pointer;
-    border: 2px solid transparent;
+    background: var(--primary-color);
+    border: none;
+    color: var(--white-color);
     border-radius: var(--border-radius-m);
+    font-weight:var(--font-weight-medium);
+    border: 1px solid var(--primary-color);
+    transition: 0.3s ease;
 }
 
-.button-group .button.active{
-    background-color:var(--dark-color);
+button.active{
+    background: var(--primary-color);
     color: var(--white-color);
 }
 
-.button-group .button.active:hover{
-    background-color:var(--secondary-color);
-    color: var(--dark-color);
+button:hover{
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.filter_design{
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.design{
+    flex-grow:1;
+    flex-basis: 300px;
+    padding: 3px;
+    border-radius: var(--border-radius-s);
+}
+
+.design.hide{
+    display: none;
+}
+
+.design img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: var(--border-radius-s);
+    margin-left: 12%;
 }
 
 /* Footer styling */
@@ -200,7 +223,7 @@ header .navbar{
 .footer-col h4{
     color: var(--white-color);
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     position: relative;
     text-transform: uppercase;
 }
@@ -241,28 +264,12 @@ header .navbar{
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 15px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-circle);
     color: var(--white-color);
 }
 
 .footer-col .social-link a:hover{
     color: var(--medium-gray-color);
-}
-
-/* Responsive media 1024px*/
-@media screen and (max-width: 1024px){
-    .gallery-section .gallery-list{
-        gap: 60px;
-    }
-
-    .gallery-section .gallery-list .gallery-item{
-        width: calc(100% / 3 - 60px);
-    }
-
-    .gallery-section .gallery-list .buttons{
-        position: absolute;
-        inset-inline-start: 50%;
-    }
 }
 
 /* Responsive media 900px*/
@@ -387,7 +394,7 @@ header .navbar{
         width: 100%;
     }
 
-    .footer-section .section-content{
+    .footer-section .container{
         flex-direction: column;
         gap: 20px;
     }
