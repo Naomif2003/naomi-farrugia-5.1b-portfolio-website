@@ -43,6 +43,9 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background: var(--light-pink-color);
+}
 
 /* styling the whole site */
 ul{
@@ -92,7 +95,6 @@ img{
 
 /* Navbar styling */
 header{
-    /* DELETED position: fixed; */
     width: 100%;
     z-index: 5;
     background: var(--primary-color);
@@ -147,7 +149,6 @@ header .navbar{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    background: var(--light-pink-color);
 }
 
 .items-links{
@@ -212,7 +213,6 @@ header .navbar{
 .container{
     max-width: 1170px;
     margin: auto;
-    margin-left: 27%;
 }
 
 .row{
