@@ -185,6 +185,8 @@ header .navbar{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    margin-bottom: 50px;
+
 }
 
 .project-img{
@@ -210,9 +212,10 @@ header .navbar{
 
 /* Footer styling */
 
-.container{
+.footer-section .container{
     max-width: 1170px;
     margin: auto;
+    margin-left: 27%;
 }
 
 .row{
