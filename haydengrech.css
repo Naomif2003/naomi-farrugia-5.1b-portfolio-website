@@ -188,6 +188,14 @@ header .navbar{
     color: var(--secondary-color);
 }
 
+.image-section .link-text{
+    color: var(--primary-color);
+}
+
+.image-section .link-text:hover{
+    color: var(--secondary-color);
+}
+
 /* Footer styling */
 
 .container{
