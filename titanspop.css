@@ -71,7 +71,7 @@ img{
 
 .section-title{
     text-align: center;
-    padding: 30px 0 50px;
+    padding: 130px 0 50px;
     text-transform: uppercase;
     font-size: var(--font-size-xl);
 }
@@ -132,6 +132,15 @@ header .navbar{
 }
 
 /* Image styling */
+.section-title{
+    background-color: var(--medium-gray-color);
+}
+
+.prototype-section{
+        background-color: var(--medium-gray-color);
+
+}
+
 .wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +148,7 @@ header .navbar{
     gap: 2rem;
     color: var(--primary-color);
     background: var(--medium-gray-color);
-    padding: 500px 110px 80px;
+    padding: 50px 110px 80px;
 }
 
 .image{
