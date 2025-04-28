@@ -133,7 +133,7 @@ header .navbar{
 
 /* Privacy Policy section styling */
 .privacy-section{
-    background: var(--dark-color);
+    background: var(--medium-gray-color);
 }
 
 .privacy-section .privacy-content{
@@ -144,27 +144,28 @@ header .navbar{
 }
 
 .image-wrapper .ghost-drawing{
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     object-fit: cover;
     float: right;
+    margin: 100px auto;
+    display: flex;
 }
-
-.privacy-section .privacy-details .section-title{
-    padding: 130px 0 0 0;
-    color: var(--white-color);
+.privacy-details{
+    padding: 130px 100px 0 0;
 }
 
 .privacy-section .privacy-details{
+    color: var(--primary-color);
     max-width: 60%;
 }
 
-.privacy-section .privacy-details .text{
+.privacy-section .text{
     line-height: 30px;
-    margin: 50px 0 30px;
+    margin: 10px 0 20px;
     text-align: justify;
     font-size: var(--font-size-m);
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 
 /* Footer styling */
