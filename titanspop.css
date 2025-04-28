@@ -132,22 +132,21 @@ header .navbar{
 }
 
 /* Image styling */
-.image-section{
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
     color: var(--primary-color);
     background: var(--medium-gray-color);
-    padding: 100px 0 80px;
+    padding: 500px 110px 80px;
 }
 
-.image-section .section-content{
-    gap: 50px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.image-section .image-wrapper .image{
+.image{
     width: 650px;
     height: 500px;
-    float: left;
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 .prototype-1{
@@ -162,38 +161,29 @@ header .navbar{
     margin-left: 250px;
 }
 
-.about-section .about-details{
-    max-width: 60%;
-}
-
 .text{
-    line-height: 30px;
-    margin: 0px 50px 20px;
+    flex: 1;
     text-align:justify;
-    font-size: var(--font-size-m);
 }
 
-.image-section .social-link-list{
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.image-section .social-link-list .social-link{
+.link{
+    background: var(--medium-gray-color);
     color: var(--primary-color);
     font-size: var(--font-size-l);
-    transition: 0.2s ease;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-.image-section .social-link-list .social-link:hover{
+.link:hover{
     color: var(--secondary-color);
 }
 
-.image-section .link-text{
+.link-text{
     color: var(--primary-color);
 }
 
-.image-section .link-text:hover{
+.link-text:hover{
     color: var(--secondary-color);
 }
 
