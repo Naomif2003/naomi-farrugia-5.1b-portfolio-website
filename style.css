@@ -40,14 +40,12 @@
 }
 
 html{
-    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
 
 section{
-    height: 100vh;
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal;
 }
 
 
@@ -206,7 +204,8 @@ header .navbar{
 
 /* About section styling */
 .about-section{
-    padding: 50px 0 80px;
+    min-height: 100vh;
+    padding: 180px 0 80px;
     background: var(--light-pink-color);
 }
 
@@ -260,7 +259,8 @@ header .navbar{
 .gallery-section{
     color: var(--white-color);
     background: var(--dark-color);
-    padding: 50px 0 80px;
+    min-height: 100vh;
+    padding: 130px 0 80px;
 }
 
 .gallery-section .gallery-list{
