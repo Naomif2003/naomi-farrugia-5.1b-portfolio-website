@@ -137,8 +137,7 @@ header .navbar{
 }
 
 .prototype-section{
-        background-color: var(--medium-gray-color);
-
+    background-color: var(--medium-gray-color);
 }
 
 .wrapper{
@@ -148,7 +147,7 @@ header .navbar{
     gap: 2rem;
     color: var(--primary-color);
     background: var(--medium-gray-color);
-    padding: 50px 110px 80px;
+    padding: 10px 110px 5px;
 }
 
 .image{
@@ -161,13 +160,15 @@ header .navbar{
 .prototype-1{
     width: 450px;
     height: 300px;
-    margin-left: 50px;
+    margin-left: 160px;
+    margin-bottom: 35px;
 }
 
 .prototype-2{
     width: 450px;
     height: 300px;
     margin-left: 250px;
+    margin-bottom: 35px;
 }
 
 .text{
