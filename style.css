@@ -282,13 +282,13 @@ header .navbar{
 
 .gallery-section .gallery-list .gallery-item .gallery-image{
     max-width: 90%;
-    margin-bottom: 1px;
+    margin-bottom: 50px;
     object-fit: contain;
 }
 
 .gallery-section .gallery-list .gallery-item .name{
     color:var(--secondary-color);
-    margin: 12px o;
+    margin: 12px 0;
     margin-top: 25PX;
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-semibold);
